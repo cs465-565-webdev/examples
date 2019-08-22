@@ -118,3 +118,23 @@ const { fname, lname, age = 45 } = character;
 // Here I am using ES6 template literals
 console.log(`I am ${fname} ${lname} and I am ${age} years old.`);
 // I am luke skywalker and I am 45 years old.
+
+
+// BigInt
+const max = Number.MAX_SAFE_INTEGER;
+
+console.log(max);
+// 9007199254740991
+
+console.log(max + 1);
+// 9007199254740992
+
+console.log(max + 2);
+// 9007199254740992
+
+const max2 = BigInt(Number.MAX_SAFE_INTEGER) + 2n;
+
+console.log(max2);
+// 9007199254740993n
+
+
